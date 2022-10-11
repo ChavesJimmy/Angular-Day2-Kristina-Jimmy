@@ -1,1 +1,37 @@
-<p>contact works!</p>
+<form [formGroup]="info" (ngSubmit)="onSubmit()">
+  <label>
+    First Name: <br>
+    <input type="text" formControlName="firstName" />
+  </label>
+<br><br>
+  <label>
+    Last Name: <br>
+    <input type="text" formControlName="lastName" />
+  </label>
+  <br><br>
+  <label>
+    Age: <br>
+    <input type="text" formControlName="age" />
+  </label>
+  <br><br>
+  <label>
+    Email: <br>
+    <input type="text" formControlName="email" />
+  </label>
+  <br><br>
+ <label>
+    Sexe: <br> 
+    <div class="checkbox">
+    <div><input type="radio" formControlName="sexe" value="M" />Male</div>
+    <div><input type="radio" formControlName="sexe" value="F" />Female</div>
+    <div><input type="radio" formControlName="sexe" value="O"/>Other</div>
+    </div>
+  </label>
+  <br><br>
+  <label>
+    Comments: <br>
+    <textarea rows="15" cols="50" formControlName="Comments"></textarea>
+  </label>
+  <br><br>
+  <input type="submit" class="btn btn-primary" value="Submit" />
+</form>
