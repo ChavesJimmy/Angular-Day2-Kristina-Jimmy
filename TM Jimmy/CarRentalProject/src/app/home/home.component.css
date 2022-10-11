@@ -1,0 +1,27 @@
+body{background-color: lightslategray;}
+
+#card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.card-img-top {
+    height: 190px;
+    object-fit: cover;
+    
+}
+
+#boxForm{
+    background-color: darkgray;
+    border: solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+
+}

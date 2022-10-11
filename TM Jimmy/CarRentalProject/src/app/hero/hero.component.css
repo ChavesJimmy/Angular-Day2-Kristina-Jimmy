@@ -1,0 +1,11 @@
+
+div{height: 500px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/25/19/11/driving-2681097__480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: whitesmoke;
+  padding: 50px;
+  border: solid white;
+}

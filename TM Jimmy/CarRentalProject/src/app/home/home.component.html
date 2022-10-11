@@ -1,7 +1,10 @@
+<body>
+  
+
 <div class="row">
-<div class="col-4" *ngFor="let car of arrayCars">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+<div id="card" class="col-4 mb-5 mt-5" *ngFor="let car of arrayCars">
+    <div class="card" style="width: 18rem; height: 25rem;">
+        <img src="{{car.pic}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{car.Brand}}  {{car.Model}} </h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -14,3 +17,47 @@
       </div>
       </div>
 </div>
+
+<div id="boxForm"><h1>Add a new car</h1>
+
+  <form [formGroup]="car" (ngSubmit)="onSubmit()">
+    <label>
+      Model: <br>
+      <input type="text" formControlName="Model" />
+    </label>
+  <br><br>
+    <label>
+      Brand: <br>
+      <input type="text" formControlName="Brand" />
+    </label>
+    <br><br>
+    <label>
+      MaxSpeed: <br>
+      <input type="text" formControlName="MaxSpeed" />
+    </label>
+    <br><br>
+    <label>
+      Kilometer: <br>
+      <input type="text" formControlName="Kilometer" />
+    </label>
+    <br><br>
+    <label>
+      Available: <br>
+      <input type="text" formControlName="Available" />
+    </label>
+    <br><br>
+    <label>
+      Image: <br>
+      <input type="text" formControlName="pic" />
+    </label>
+    <br><br>
+   
+    <br><br>
+    <input type="submit" class="btn btn-primary" value="Submit" />
+  </form>
+  
+
+
+
+</div>
+</body>
