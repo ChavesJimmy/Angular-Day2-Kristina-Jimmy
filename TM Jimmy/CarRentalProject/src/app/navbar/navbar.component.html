@@ -1,8 +1,14 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">Navbar</span>
+      <ng-template [ngIf]="donate >= 200">
+        <span id="VIP" class="mt-3">You are a VIP Member</span>
+      </ng-template>
     </div>
     <a routerLink="/">Home</a>
     <a routerLink="contact">Contact</a>
-    <a href="">Donate 10$</a>
+    <div>
+    <a id="donate" (click)="addDonation()">Donate 10$</a>
+    <p>You have donated {{donate}} $ in total</p>
+  </div>
   </nav>

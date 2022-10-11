@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  donate : number = 0
   constructor() { }
 
+  addDonation(){
+    this.donate = this.donate + 10;
+  }
   ngOnInit(): void {
   }
 
